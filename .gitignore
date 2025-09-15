@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Allure
+allure-results/
+allure-report/
+artifacts/
+output/
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
