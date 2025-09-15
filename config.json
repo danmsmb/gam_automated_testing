@@ -1,0 +1,12 @@
+{
+  "app_login_page_url": "https://gamail.dev.internal.sirenanalytics.com/gamail_web/login",
+  "app_home_page_url" : "https://gamail.dev.internal.sirenanalytics.com/gamail_web/citizenMain",
+  "citizen_user": "tia",
+  "citizen_password": "Admin@pass123",
+  "admin_user": "omar",
+  "admin_password": "Admin@pass123",
+  "app_registration_page_url": "https://gamail.dev.internal.sirenanalytics.com/gamail_web/registiration",
+  "change_password_user": "dana_change_password",
+  "change_password_url": "https://gamail.dev.internal.sirenanalytics.com/gamail_web/changePassword"
+
+}
