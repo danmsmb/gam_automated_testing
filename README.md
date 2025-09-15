@@ -15,11 +15,13 @@ git clone https://github.com/danmsmb/gam_automated_testing.git
 
 cd gam_automated_testing
 
+
 Create a virtual environment  
 
 python -m venv .venv  
 
 .venv\Scripts\activate    # Windows PowerShell
+
 
 Install dependencies  
 
@@ -32,11 +34,13 @@ Install Playwright browsers
 
 python -m playwright install
 
+
 ## 3. Running Tests  
 
 Run the full suite  
 
 pytest -p no:allure_pytest tests/step_definitions --browser chromium -vv --headed --alluredir=allure-results
+
 
 Explanation  
 
