@@ -13,7 +13,7 @@ Git (to clone the repository)
 Clone the repo
 git clone https://github.com/danmsmb/gam_automated_testing.git  
 
-cd gam_automated_testing
+cd gam_automated_testing  
 
 
 Create a virtual environment  
