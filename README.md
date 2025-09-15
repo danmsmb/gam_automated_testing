@@ -16,10 +16,10 @@ git clone https://github.com/danmsmb/gam_automated_testing.git
 cd gam_automated_testing  
 
 
-Create a virtual environment  
+Create a virtual environment
+
 
 python -m venv .venv  
-
 .venv\Scripts\activate    # Windows PowerShell
 
 
