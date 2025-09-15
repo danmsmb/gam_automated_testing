@@ -12,7 +12,8 @@ Git (to clone the repository)
 
 
 ## 2. Setup
-Clone the repo
+Clone the repo  
+
 git clone https://github.com/danmsmb/gam_automated_testing.git  
 
 cd gam_automated_testing  
