@@ -4,8 +4,10 @@ End-to-end UAT automation for the GAM platform, built with Playwright + Pytest +
 This suite validates Citizen and Admin flows and generates an Allure evidence report.
 
 ## 1. Prerequisites
-Python 3.10+ installed
-pip (comes with Python)
+Python 3.10+ installed  
+
+pip (comes with Python)  
+
 Git (to clone the repository)
 
 
