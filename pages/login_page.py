@@ -36,8 +36,9 @@ class LoginPage(BasePage):
 
       # Login in to GAM by input username and password
     def login(self, user_role, config) -> None:
+       self.page.wait_for_timeout(7000)
        if user_role == 'citizen':
-            self.page.wait_for_timeout(7000)
+          
             self.username_input.click()
             self.username_input.fill(config['citizen_user'])
             self.page.wait_for_timeout(2000)
@@ -46,7 +47,7 @@ class LoginPage(BasePage):
             self.page.wait_for_timeout(2000)
             self.login_button.click()
        elif user_role == 'admin':
-            self.page.wait_for_timeout(7000)
+            self.username_input.click()
             self.username_input.fill(config['admin_user'])
             self.page.wait_for_timeout(2000)
             self.password_input.click()
