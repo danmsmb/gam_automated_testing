@@ -146,7 +146,7 @@ class SurveysPage(BasePage):
         self.click_surveys_menu()
         
         # Look for the survey by title and click it
-        survey_element = self.page.get_by_text(survey_title, exact=True).first
+        survey_element = self.page.get_by_role("button", name=re.compile("survey_card_")).first
         survey_element.click()
         self.page.wait_for_timeout(5000)
 

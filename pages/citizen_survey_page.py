@@ -1,4 +1,5 @@
 import os
+import re
 from playwright.sync_api import Page
 from tests.step_definitions.conftest import config
 from pages.base_page import BasePage
@@ -13,8 +14,7 @@ class CitizenSurveyPage(BasePage):
         self.surveys_nav = page.get_by_role("switch", name="NavItem.Surveys")
         
         # Survey list selectors
-        self.first_survey = page.locator("[id^='flt-semantic-node']").first
-        
+        self.first_survey = page.get_by_role("button", name=re.compile("survey_card_")).first
         # Survey form selectors
         self.survey_title = page.get_by_text("Test Survey - Automated")
         self.survey_text_input = page.get_by_role("textbox", name="What are your thoughts on the")

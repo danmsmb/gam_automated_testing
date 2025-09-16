@@ -32,6 +32,7 @@ class SuggestEventPage(BasePage):
         self.page.wait_for_timeout(1000)
         self.location_list.click()
         self.location_option.click()
+        self.page.wait_for_timeout(1000)
         self.suggested_event_name_ar_input.click()
         self.suggested_event_name_ar_input.fill(event_data["event_name_ar"])
         self.page.wait_for_timeout(1000)

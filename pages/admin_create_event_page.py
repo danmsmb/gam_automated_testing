@@ -81,18 +81,18 @@ class AdminCreateEventPage(SuggestEventPage):
         
         # Set accessibility
         self.page.wait_for_timeout(1000)
-        self.event_accessibility_list.scroll_into_view_if_needed()
+     
         self.event_accessibility_list.click()
         self.page.get_by_role("button", name=admin_data["accessibility"]).click()
         self.done_button.click()
         
         # Fill descriptions
         self.page.wait_for_timeout(2000)
-        self.event_description_input_ar.scroll_into_view_if_needed()
+      
         self.event_description_input_ar.click()
         self.event_description_input_ar.fill(suggest_data["event_description_ar"])
-        self.page.wait_for_timeout(2000)
-        self.event_description_input_en.scroll_into_view_if_needed()
+        self.page.wait_for_timeout(3000)
+
         self.event_description_input_en.click()
         self.event_description_input_en.fill(suggest_data["event_description_en"])
         self.page.wait_for_timeout(1000)
