@@ -31,7 +31,7 @@ Test Steps:
 This test validates the complete survey creation and submission flow for admin users.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/surveys.feature', 'Complete survey creation and submission flow')
+@scenario('../../features/admin-features/surveys.feature', 'Complete survey creation and submission flow')
 def test_survey_creation_and_submission():
     pass
 

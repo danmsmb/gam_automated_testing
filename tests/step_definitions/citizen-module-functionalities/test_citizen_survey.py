@@ -20,7 +20,7 @@ Test Steps:
 This test validates the complete citizen survey submission and verification flow.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/citizen_survey.feature', 'Successful survey submission and verification')
+@scenario('../../features/citizen-features/citizen_survey.feature', 'Successful survey submission and verification')
 def test_citizen_survey():
     pass
 

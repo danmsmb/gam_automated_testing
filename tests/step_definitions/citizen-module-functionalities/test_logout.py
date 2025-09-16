@@ -17,7 +17,7 @@ This test validates the logout functionality and proper session termination.
 @allure.feature("Logout")
 @allure.story("Logout")
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/logout.feature', 'Logout')
+@scenario('../../features/citizen-features/logout.feature', 'Logout')
 def test_logout():
     pass
 

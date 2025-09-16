@@ -22,7 +22,7 @@ Test Steps:
 This test validates the complete flow from admin event creation to citizen verification.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/admin_create_event_citizen_verify.feature', 'Admin creates event and citizen verifies it is visible')
+@scenario('../../features/admin-features/admin_create_event_citizen_verify.feature', 'Admin creates event and citizen verifies it is visible')
 def test_admin_create_event_citizen_verify():
     pass
 

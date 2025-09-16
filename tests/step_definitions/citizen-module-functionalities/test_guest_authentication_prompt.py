@@ -17,7 +17,7 @@ Test Steps:
 This test validates that guest users are prompted to login when accessing protected features.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/guest_authentication_prompt.feature', 'Guest user accessing protected features prompts for login')
+@scenario('../../features/citizen-features/guest_authentication_prompt.feature', 'Guest user accessing protected features prompts for login')
 def test_guest_authentication_prompt():
     pass
 

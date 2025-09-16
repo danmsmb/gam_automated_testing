@@ -18,7 +18,7 @@ Test Steps:
 This test validates the complete language switching functionality between English and Arabic.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/language_switch.feature', 'Successful language switch from English to Arabic and back')
+@scenario('../../features/citizen-features/language_switch.feature', 'Successful language switch from English to Arabic and back')
 def test_language_switch():
     pass
 

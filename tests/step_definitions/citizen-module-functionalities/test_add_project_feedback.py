@@ -20,7 +20,7 @@ Test Steps:
 This test validates the project feedback functionality for completed projects.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/add_project_feedback.feature', 'Successful project feedback addition using valid data')
+@scenario('../../features/citizen-features/add_project_feedback.feature', 'Successful project feedback addition using valid data')
 def test_add_project_feedback():
     pass
 

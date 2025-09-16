@@ -28,7 +28,7 @@ Test Steps:
 This test validates the complete event registration flow for citizen users.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/event_registration.feature', 'Successful event registration with valid data')
+@scenario('../../features/citizen-features/event_registration.feature', 'Successful event registration with valid data')
 def test_event_registration():
     pass
 

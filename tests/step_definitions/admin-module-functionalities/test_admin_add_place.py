@@ -25,7 +25,7 @@ Test Steps:
 This test validates the admin add place functionality reusing existing add place form logic.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/admin_add_place.feature', 'Admin successfully adds a new place')
+@scenario('../../features/admin-features/admin_add_place.feature', 'Admin successfully adds a new place')
 def test_admin_add_place():
     pass
 

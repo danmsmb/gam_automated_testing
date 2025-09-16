@@ -6,7 +6,7 @@ from pages.admin_project_page import AdminProjectPage
 from pages.project_search_page import ProjectSearchPage
 import json
 
-@scenario('../features/admin_project_citizen_verify.feature', 'Admin creates project and citizen verifies it is visible')
+@scenario('../../features/admin-features/admin_project_citizen_verify.feature', 'Admin creates project and citizen verifies it is visible')
 def test_admin_create_project_citizen_verify():
     pass
 

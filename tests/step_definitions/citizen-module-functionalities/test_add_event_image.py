@@ -21,7 +21,7 @@ This test validates the event image upload functionality for citizen users.
 """)
 @allure.severity(allure.severity_level.NORMAL)
 
-@scenario('../features/add_event_image.feature', 'Successful event image addition using valid image file')
+@scenario('../../features/citizen-features/add_event_image.feature', 'Successful event image addition using valid image file')
 def test_event_image():
     pass
 

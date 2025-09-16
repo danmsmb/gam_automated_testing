@@ -19,7 +19,7 @@ Test Steps:
 This test validates the project suggestion functionality for citizen users.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/add_project_suggestion.feature', 'Successful project suggestion addition using valid data')
+@scenario('../../features/citizen-features/add_project_suggestion.feature', 'Successful project suggestion addition using valid data')
 def test_add_project_suggestion():
     pass
 

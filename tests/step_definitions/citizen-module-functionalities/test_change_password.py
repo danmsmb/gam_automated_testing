@@ -19,7 +19,7 @@ Test Steps:
 This test validates the complete password change flow with valid credentials.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/change_password.feature', 'Successful password change using valid data')
+@scenario('../../features/citizen-features/change_password.feature', 'Successful password change using valid data')
 def test_change_password():
     pass
 

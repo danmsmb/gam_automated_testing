@@ -17,7 +17,7 @@ Test Steps:
 This test validates the event search functionality for both existing and non-existing events.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/event_search.feature', 'Search for existing and non-existing events')
+@scenario('../../features/citizen-features/event_search.feature', 'Search for existing and non-existing events')
 def test_event_search():
     pass
 

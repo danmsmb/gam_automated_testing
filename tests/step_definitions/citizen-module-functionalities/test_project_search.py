@@ -18,7 +18,7 @@ Test Steps:
 This test validates the project search functionality for both existing and non-existing projects.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/project_search.feature', 'Search for existing and non-existing projects')
+@scenario('../../features/citizen-features/project_search.feature', 'Search for existing and non-existing projects')
 def test_project_search():
     pass
 

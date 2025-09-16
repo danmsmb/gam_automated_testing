@@ -20,7 +20,7 @@ This test validates that the citizen project filtering functionality correctly f
 """)
 @allure.severity(allure.severity_level.NORMAL)
 
-@scenario('../features/citizen_project_filter.feature', 'Filter projects by status and verify all results match the selected status')
+@scenario('../../features/citizen-features/citizen_project_filter.feature', 'Filter projects by status and verify all results match the selected status')
 def test_citizen_project_filter_by_status():
     pass
 

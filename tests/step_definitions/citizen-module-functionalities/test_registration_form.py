@@ -20,7 +20,7 @@ Test Steps:
 This test validates the complete user registration flow with valid data.
 """)
 @allure.severity(allure.severity_level.CRITICAL)
-@scenario('../features/registration.feature', 'Successful user registration with valid data')
+@scenario('../../features/citizen-features/registration.feature', 'Successful user registration with valid data')
 def test_registration():
     pass
 @pytest.fixture

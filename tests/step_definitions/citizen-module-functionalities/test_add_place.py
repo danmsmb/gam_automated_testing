@@ -20,7 +20,7 @@ Test Steps:
 This test validates the place addition functionality for citizen users.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/add_place.feature', 'Successful place addition using valid data')
+@scenario('../../features/citizen-features/add_place.feature', 'Successful place addition using valid data')
 def test_add_place():
     pass
 

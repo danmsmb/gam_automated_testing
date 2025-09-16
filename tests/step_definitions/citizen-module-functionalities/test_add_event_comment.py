@@ -19,7 +19,7 @@ This test validates the event commenting functionality for citizen users.
 """)
 @allure.severity(allure.severity_level.NORMAL)
 
-@scenario('../features/add_event_comment.feature', 'Successful event comment addition using valid data')
+@scenario('../../features/citizen-features/add_event_comment.feature', 'Successful event comment addition using valid data')
 
 def test_event_comment():
     pass

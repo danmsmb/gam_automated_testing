@@ -23,7 +23,7 @@ Test Steps:
 This test validates the complete event suggestion flow for citizen users.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/suggest_event.feature', 'Successful event suggestion using valid data')
+@scenario('../../features/citizen-features/suggest_event.feature', 'Successful event suggestion using valid data')
 def test_suggest_event():
     pass
     pass

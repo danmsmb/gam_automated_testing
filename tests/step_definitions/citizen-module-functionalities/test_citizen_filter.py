@@ -22,7 +22,7 @@ This test validates that the citizen filter functionality correctly filters even
 """)
 @allure.severity(allure.severity_level.NORMAL)
 
-@scenario('../features/citizen_filter.feature', 'Filter events by wheelchair accessibility and verify results')
+@scenario('../../features/citizen-features/citizen_filter.feature', 'Filter events by wheelchair accessibility and verify results')
 def test_citizen_filter_wheelchair():
     pass
 

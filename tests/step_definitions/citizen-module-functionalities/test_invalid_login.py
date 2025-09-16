@@ -18,7 +18,7 @@ Test Steps:
 This test validates the login functionality with invalid credentials and proper error handling.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/invalid_login.feature', 'Login with invalid credentials shows error message')
+@scenario('../../features/citizen-features/invalid_login.feature', 'Login with invalid credentials shows error message')
 def test_invalid_login():
     pass
 

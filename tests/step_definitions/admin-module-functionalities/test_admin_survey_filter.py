@@ -22,7 +22,7 @@ Test Steps:
 This test validates the complete admin survey filter template creation flow.
 """)
 @allure.severity(allure.severity_level.NORMAL)
-@scenario('../features/admin_survey_filter.feature', 'Successful survey filter template creation')
+@scenario('../../features/admin-features/admin_survey_filter.feature', 'Successful survey filter template creation')
 def test_admin_survey_filter():
     pass
 
