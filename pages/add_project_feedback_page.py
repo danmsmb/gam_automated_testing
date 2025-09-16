@@ -10,7 +10,7 @@ class AddProjectFeedbackPage(BasePage):
         self.projects_nav = page.get_by_role("switch", name="NavItem.Projects")
         
         # Project filter buttons
-        self.completed_filter = page.get_by_role("button", name="Completed")
+        self.completed_filter = page.get_by_role("button", name="Completed", exact= True)
         
         # Project selection - look for completed projects
         self.completed_project_details_button = page.get_by_role("button", name="View details...").first

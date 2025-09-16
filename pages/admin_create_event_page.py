@@ -49,6 +49,7 @@ class AdminCreateEventPage(SuggestEventPage):
                # Set location
         self.page.wait_for_timeout(1000)
         self.location_list.click()
+        self.page.wait_for_timeout(1000)
         self.location_option.click()
         self.page.wait_for_timeout(1000)
         self.suggested_event_name_ar_input.click()

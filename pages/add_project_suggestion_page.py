@@ -10,7 +10,7 @@ class AddProjectSuggestionPage(BasePage):
         self.projects_nav = page.get_by_role("switch", name="NavItem.Projects")
         
         # Project filter buttons
-        self.ongoing_filter = page.get_by_role("button", name="Ongoing")
+        self.ongoing_filter = page.get_by_role("button", name="Ongoing", exact= True)
         
         # Project selection
         self.ongoing_project_details_button = page.get_by_role("button", name="View details...").first
