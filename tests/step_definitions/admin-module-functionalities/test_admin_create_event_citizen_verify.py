@@ -27,16 +27,6 @@ def test_admin_create_event_citizen_verify():
     pass
 
 
-@given('I am logged in as admin')
-def given_logged_in_admin(page, config):
-    login_page = LoginPage(page)
-    
-    # Navigate to login page
-    page.goto(config['app_login_page_url'])
-    
-    # Login with admin credentials
-    login_page.login("admin", config)
-
 @when(parsers.parse('I create a new event with name "{event_name}"'))
 def when_create_event(page, event_name):
     admin_create_page = AdminCreateEventPage(page)
@@ -106,6 +96,56 @@ def then_find_event_in_search(page):
     
     # Verify event appears in search results and details are correct
     verification_page.verify_event_found(event_data["name_english"])
+
+
+@when('I register for the created event')
+def when_register_for_created_event(page):
+    from pages.event_registration_page import EventRegistrationPage
+    import random
+    
+    event_registration_page = EventRegistrationPage(page)
+    
+    # Get the event data from the page context
+    event_data = page.evaluate("window.testEventData")
+    event_name = event_data["name_english"]
+    
+    # Set the dynamic event name for the registration page
+    event_registration_page.set_event_name(event_name)
+    
+    # Prepare registration data
+    ts = int(time.time())
+    rnd = random.randint(1000, 9999)
+    
+    registration_data = {
+        "name": f"Test User {rnd}",
+        "age": "25", 
+        "gender": "male",
+        "phone": f"0791234{rnd}",
+        "email": f"test{ts}@example.com",
+    }
+    
+    # Navigate to event details and register
+    event_registration_page.navigate_to_first_event_details()
+    event_registration_page.click_register_me()
+    event_registration_page.fill_registration_form(registration_data)
+    event_registration_page.submit_registration()
+
+
+@then('the registration should be successful')
+def then_registration_successful(page):
+    from pages.event_registration_page import EventRegistrationPage
+    
+    event_registration_page = EventRegistrationPage(page)
+    
+    # Get the event data from the page context
+    event_data = page.evaluate("window.testEventData")
+    event_name = event_data["name_english"]
+    
+    # Set the dynamic event name for verification
+    event_registration_page.set_event_name(event_name)
+    
+    # Verify registration success
+    event_registration_page.verify_registration_success()
 
 
 @pytest.fixture(scope="session")

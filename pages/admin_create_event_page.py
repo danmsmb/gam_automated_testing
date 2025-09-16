@@ -48,10 +48,7 @@ class AdminCreateEventPage(SuggestEventPage):
         # Fill event names
                # Set location
         self.page.wait_for_timeout(1000)
-        self.location_list.click()
-        self.page.wait_for_timeout(1000)
-        self.location_option.click()
-        self.page.wait_for_timeout(1000)
+     
         self.suggested_event_name_ar_input.click()
         self.suggested_event_name_ar_input.fill(suggest_data["event_name_ar"])
         self.page.wait_for_timeout(2000)
@@ -71,11 +68,16 @@ class AdminCreateEventPage(SuggestEventPage):
         self.date_ok_button.click()
         self.page.wait_for_timeout(1000)
 
+        self.location_list.click()
+        self.page.wait_for_timeout(1000)
+        self.location_option.click()
+        self.page.wait_for_timeout(1000)
+
  
         
         # Set category
         self.page.wait_for_timeout(1000)
-        self.event_category_list.scroll_into_view_if_needed()
+       
         self.event_category_list.click()
         self.page.get_by_role("button", name=admin_data["category"]).click()
         self.done_button.click()

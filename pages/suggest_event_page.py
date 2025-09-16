@@ -19,7 +19,7 @@ class SuggestEventPage(BasePage):
         self.event_category_list = page.get_by_text("Enter event category...")
         self.event_category_option = page.get_by_role("button", name="Sport")
         self.event_description_input_ar = page.get_by_role("textbox", name="Write event description in")
-        self.event_description_input_en = page.get_by_role("textbox", name="Write a description for the")
+        self.event_description_input_en = page.get_by_role("textbox", name="Write a description for the event in English...")
         self.submit_button = page.get_by_role("button", name="Send Suggestion")
         self.ok_button = page.get_by_role("button", name="okay")
         self.event_accessibility_list = page.get_by_text("Enter event accessibility...")
